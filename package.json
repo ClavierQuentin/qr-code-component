@@ -1,0 +1,22 @@
+{
+  "name": "qr-code-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./public/sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClavierQuentin/qr-code-component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClavierQuentin/qr-code-component/issues"
+  },
+  "homepage": "https://github.com/ClavierQuentin/qr-code-component#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

@@ -1,0 +1,57 @@
+$background-color: #D5E1EF;
+$secondary-background-color:#FFFFFF;
+$dark-color-font:#1B2A4B;
+$light-color-font:#9CA0A5;
+$font-size:15px;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@mixin font{
+    font-family: 'Outfit', sans-serif;
+}
+@mixin round-border($value){
+    border-radius: $value;
+}
+
+body {
+    background-color: $background-color;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+div{
+    position: relative;
+    background-color: $secondary-background-color;
+    width: 16%;
+    padding: 20px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    top: 50vh;
+    transform: translateY(-50%);
+    @include font;
+    @include round-border(20px);
+
+    img{
+        width: 100%;
+        @include round-border(10px);
+    }
+    p{
+        margin: 0;
+        width: 90%;
+        text-align: center;
+        color: $light-color-font;
+        font-size: $font-size;
+    }
+    .boldParagraph{
+        font-weight: 700;
+        color: $dark-color-font;
+        font-size: 1.2*$font-size;
+    }
+    @media (max-width: 1440px){
+        width: 80%;
+    }
+
+}
